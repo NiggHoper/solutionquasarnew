@@ -93,4 +93,4 @@ getgenv().Quasar = {
         }
     }
 }
-loadstring(game:HttpGet("https://pastebin.com/raw/C6R2XTGi"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NiggHoper/solutionquasarnew/main/obf"))()
