@@ -1,0 +1,95 @@
+getgenv().Quasar = {
+    Aimbot = {
+        Keybind = Enum.KeyCode.X,     -- select the key you want 
+        QuasarAim = 0.2,
+        Prediction = 0.13,
+
+        ShakeEnabled = false,        -- Camera shake
+        Shake = 0,
+        
+        Amount = 0.160145,
+        Style = "Back",
+        Direction = "Inout",
+
+        TargetPart = "HumanoidRootPart", -- You can select: Head HumanoidRootPart UpperTorso LowerTorso RightHand LeftHand RightFoot LeftFoot
+    },
+
+    ['Visuals'] = {
+        -- Configuración de teclas
+        ToggleKey = Enum.KeyCode.Y,  -- Key to toggle all enabled options on/off select the key you want
+
+        -- Configuración de opciones
+        ShowNameTags = false,
+        ShowTracers = false,
+        ShowBoxes = true,
+        ShowHealthBars = true,
+        ShowDistanceTags = false,
+        ShowBones = false,
+
+        -- Configuración de colores (1: blanco, 2: morado intenso, 3: verde)
+        ColorOptions = {
+            [1] = Color3.fromRGB(255, 255, 255),  -- White
+            [2] = Color3.fromRGB(128, 0, 255),    -- Purple
+            [3] = Color3.fromRGB(0, 255, 0)       -- Green
+        },
+        CurrentColorIndex = 2,  -- Current color index
+    },
+
+    ['Body part'] = {
+        Part = "HumanoidRootPart",        -- You can select: Head HumanoidRootPart UpperTorso LowerTorso RightHand LeftHand RightFoot LeftFoot
+    },
+
+    ['Resolver'] = {
+        Enabled = true,
+    },
+
+    ['Silent'] = {
+        Prediction = 0.11,        -- Silent Pred
+        Detection = {Close = 27, Mid = 38, Far = math.huge},
+    },
+
+    ['SpecificDis'] = {
+        Enabled = true,
+        Prediction = {
+            Close = 0.11,
+            Mid = 0.1188,
+            Far = 0.1221,
+        },
+    },
+
+    ['OffSets'] = {
+        Jump = {Amount = 0.93},
+        Fall = {Amount = -1.50},
+    },  
+    
+    ['FoV'] = {
+        Enabled = true,
+        Size = 300,
+        Color = Color3.fromRGB(255, 255, 255),     -- Field of View 
+        Transparency = 1.1,
+        Filled = false,
+    },
+
+    ['OnAir'] = {
+        Enabled = true,
+        AirPart = "Head",
+    },
+
+    ['Checks'] = {
+        TargetDeath = true,
+        PlayerDeath = true,        -- Checks 
+    },
+
+    ['Movement'] = {
+        Enabled = true,            -- Activar o desactivar el movimiento
+        Speed = {
+            ActivationKey = Enum.KeyCode.O, -- Tecla para activar la velocidad
+            Value = 100,                    -- Valor de la velocidad
+        },
+        JumpEnabled = true,       -- Activar o desactivar el salto
+        Jump = {
+            Height = 5,                     -- Altura del salto
+            Duration = 0.5,                 -- Duración del salto en segundos
+        }
+    }
+}
